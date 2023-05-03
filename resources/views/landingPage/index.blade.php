@@ -26,6 +26,7 @@ Alternatively if you want to just have a single hero
                 <div class="h-72 w-72 border rounded-xl overflow-hidden ">
                     <img class="object-cover w-full"
                         src="https://i.pinimg.com/564x/ca/f8/0b/caf80b4d3115be8505a29834d594ea69.jpg " alt="">
+                        tes
                 </div>
 
                 <div class="flex flex-col h-64 p-1 ml-12 max-w-3xl">
