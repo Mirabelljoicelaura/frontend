@@ -1,6 +1,15 @@
+#header{
+    background: #485ae4;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.show{display: block;}
 
         .work-sans {
-            font-family: 'Work Sans', sans-serif;
+            font-family:'Work Sans', sans-serif;
         }
 
         #menu-toggle:checked + #menu {
@@ -15,6 +24,11 @@
         .hover\:grow:hover {
             transform: scale(1.02);
         }
+/*
+        .logo{
+            position: absolute;
+            margin: 10 auto;
+        } */
 
         .carousel-open:checked + .carousel-item {
             position: static;
