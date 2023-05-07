@@ -19,14 +19,16 @@ Alternatively if you want to just have a single hero
 </section>
 
 -->
+
+
+{{-- Section Sambutan Ketua RW --}}
 @section('speech-content')
     <section class="bg-white py-8">
         <div class="container py-8 px-6 mx-auto">
-            {{-- <a class="flex flex-col items-center justify-center md:flex-row p-5">
+            <a class="flex flex-col items-center justify-center md:flex-row p-5">
                 <div class="h-72 w-72 border rounded-xl overflow-hidden ">
                     <img class="object-cover w-full"
                         src="https://i.pinimg.com/564x/ca/f8/0b/caf80b4d3115be8505a29834d594ea69.jpg " alt="">
-                        tes
                 </div>
 
                 <div class="flex flex-col h-64 p-1 ml-12 max-w-3xl">
@@ -45,35 +47,14 @@ Alternatively if you want to just have a single hero
                         in perferendis, assumenda veniam est sed ea incidunt fugiat?</p>
                     </p>
                 </div>
-            </a> --}}
-
-            <div class="flex flex-col md:flex-row justify-center items-center p-5 mx-12 gap-2">
-                <div class="w-2/4">
-                    <div class="h-80 w-80 border rounded-xl overflow-hidden mx-auto">
-                        <img class="object-cover w-full"
-                            src="https://i.pinimg.com/564x/ca/f8/0b/caf80b4d3115be8505a29834d594ea69.jpg " alt="">
-                    </div>
-                </div>
-                <div class="w-full max-h-72 ">
-                    <h5 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white uppercase">
-                        sambutan ketua RW
-                    </h5>
-                    <p class="mb-3 font-normal text-justify">
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vitae
-                        aliquet nec ullamcorper sit. Nullam eget felis eget nunc lobortis mattis aliquam. In est ante in
-                        nibh mauris. Egestas congue quisque egestas diam in. Facilisi nullam vehicula ipsum a arcu. Nec nam
-                        aliquam sem et tortor consequat. Eget mi proin sed libero enim sed faucibus turpis in. Hac habitasse
-                        platea dictumst quisque. In aliquam sem fringilla ut. Gravida rutrum quisque non tellus orci ac
-                        auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit egestas dui id. At tempor
-                    </p>
-                </div>
-            </div>
-        </div>
+            </a>
     </section>
 @endsection
 
 @section('counting-content')
+
+
+
     <section class="text-gray-600 body-font">
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-10 mx-auto">
@@ -302,7 +283,37 @@ Alternatively if you want to just have a single hero
 
     </div>
 </section> --}}
+<script>
+    // ormas slider
+    let sliderContainer = document.getElementById('sliderContainer');
+        let slider = document.getElementById('slider');
+        let cards = document.getElementById('ormas-card');
 
+        let elementsToShow = 3;
+        let sliderContainerWidth = sliderContainer.clientWidth;
+
+        let cardWidth = sliderContainerWidth/elementsToShow;
+
+        slider.style.width = cards.length*cardWidth+'px';
+
+        for(let i = 0; i<cards.length; i++){
+            const element = cards[i];
+        }
+
+        function next(){
+            console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
+            if(+slider.style.marginLeft.slice(0, -2) != (-cardWidth*(cards.length-elementsToShow))){
+                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))-cardWidth)+'px';
+            }
+        }
+
+        function prev(){
+            console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
+            if(+slider.style.marginLeft.slice(0, -2) != 0){
+                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))+cardWidth)+'px';
+            }
+        }
+</script>
     </body>
 
     </html>
