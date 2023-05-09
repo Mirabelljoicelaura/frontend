@@ -1,4 +1,4 @@
-<nav id="header" class="w-full z-30 top-0 py-1 sticky">
+<nav id="blue-color" class="w-full z-30 top-0 sticky">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
 
         <div class="md:order-1">
@@ -13,7 +13,7 @@
 
 
         <label for="menu-toggle" class="cursor-pointer md:hidden block">
-            <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <title>menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
@@ -22,10 +22,10 @@
 
         <div class="hidden md:flex md:flex-grow flex-row justify-end md:w-auto w-full order-2 md:order-2" id="menu">
             <nav>
-                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                    <li><a class="inline-block no-underline hover:text-gray-800 py-2 px-4 text-white" href="#">Beranda</a></li>
+                <ul class="md:flex items-center justify-between text-base text-black pt-4 md:pt-0">
+                    <li><a class="inline-block no-underline hover:text-yellow-300 py-2 px-4 text-white" href="#">Beranda</a></li>
                     <li class="relative" x-data="{dropdownOpen:false}">
-                        <button class="inline-block hover:text-gray-800 hover:font-bold py-2 px-4 text-white" href="#" onclick="myFunction()">Profile
+                        <button class="inline-block hover:text-yellow-300 py-2 px-4 text-white" href="#" onclick="myFunction('myDropdown')">Profile
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill inline-block" viewBox="0 0 16 16">
                                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                               </svg>
@@ -38,8 +38,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a class="inline-block no-underline hover:text-gray-800 hover:font-bold py-2 px-4 text-white" href="#">Galeri</a></li>
-                    <li><a class="inline-block no-underline hover:text-gray-800 hover:font-bold py-2 px-4 text-white" href="#">Contact Us</a></li>
+                    <li><a class="inline-block no-underline hover:text-yellow-300 py-2 px-4 text-white" href="#">Galeri</a></li>
+                    <li class="hover:border-b-2 hover:border-b-yellow-300 hover:text-yellow-300"><a class="inline-block no-underline hover:text-yellow-300 py-2 px-4 text-white" href="#">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
