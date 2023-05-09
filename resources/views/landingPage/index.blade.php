@@ -224,7 +224,7 @@ Alternatively if you want to just have a single hero
 
     <section class="text-gray-600 body-font">
         <section class="text-gray-600 body-font">
-            <div class="container px-5 py-10 mx-auto">
+            {{-- <div class="container px-5 py-10 mx-auto">
                 <div class="flex flex-wrap -m-4 text-center">
                     <div class="p-4 sm:w-1/3 w-1/2">
                         <h2 class="title-font font-medium sm:text-5xl text-3xl text-white">
@@ -261,6 +261,40 @@ Alternatively if you want to just have a single hero
                             </CountUp>
                         </h2>
                         <p class="leading-relaxed">Downloads</p>
+                    </div>
+                </div>
+            </div> --}}
+            
+
+              <div class="row g-3 pb-4">
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="border rounded p-1">
+                        <div class="border rounded text-center p-4">
+                            <i class="fa fa-mobile-screen fa-2x text-primary mb-2"></i>
+                            <h2 class="mb-1" data-val="10" id="num">00</h2>
+                            <p class="mb-0 fw-bolder">Million</p>
+                            <p class="mb-0">User</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="border rounded p-1">
+                        <div class="border rounded text-center p-4">
+                            <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>
+                            <h2 class="mb-1" data-val="80" id="num">00</h2>
+                            <br>
+                            <p class="mb-0">Staffs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="border rounded p-1">
+                        <div class="border rounded text-center p-4">
+                            <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                            <h2 class="mb-1" data-val="500" id="num">000</h2>
+                            <br>
+                            <p class="mb-0">Clients</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -488,37 +522,10 @@ Alternatively if you want to just have a single hero
 
     </div>
 </section> --}}
-<script>
-    // ormas slider
-    let sliderContainer = document.getElementById('sliderContainer');
-        let slider = document.getElementById('slider');
-        let cards = document.getElementById('ormas-card');
 
-        let elementsToShow = 3;
-        let sliderContainerWidth = sliderContainer.clientWidth;
+  <!-- JavaScript Libraries -->
 
-        let cardWidth = sliderContainerWidth/elementsToShow;
 
-        slider.style.width = cards.length*cardWidth+'px';
-
-        for(let i = 0; i<cards.length; i++){
-            const element = cards[i];
-        }
-
-        function next(){
-            console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
-            if(+slider.style.marginLeft.slice(0, -2) != (-cardWidth*(cards.length-elementsToShow))){
-                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))-cardWidth)+'px';
-            }
-        }
-
-        function prev(){
-            console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
-            if(+slider.style.marginLeft.slice(0, -2) != 0){
-                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))+cardWidth)+'px';
-            }
-        }
-</script>
     </body>
 
     </html>
