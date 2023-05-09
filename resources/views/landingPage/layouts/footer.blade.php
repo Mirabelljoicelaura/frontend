@@ -1,4 +1,4 @@
-<footer class="container max-w-full text-white py-8 border-t border-gray-400 bg-slate-400" id="header">
+<footer class="container max-w-full text-white py-8 border-t border-gray-400 bg-slate-400" id="blue-color">
     <div class="container flex px-3 py-8 mx-auto">
         <div class="w-full mx-auto flex flex-wrap">
             <div class="flex w-full lg:w-1/2 ">

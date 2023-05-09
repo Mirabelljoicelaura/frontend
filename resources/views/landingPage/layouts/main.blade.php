@@ -55,33 +55,36 @@
         }
 
         // ormas slider
-        let sliderContainer = document.getElementById('sliderContainer');
-        let slider = document.getElementById('slider');
+        // let sliderContainer = document.getElementById('sliderContainer');
+        // let slider = document.getElementById('slider');
         let cards = document.getElementById('ormas-card');
+        // let elementsToShow = 3;
+        // let sliderContainerWidth = sliderContainer.clientWidth;
 
-        let elementsToShow = 3;
-        let sliderContainerWidth = sliderContainer.clientWidth;
+        // let cardWidth = sliderContainerWidth/elementsToShow;
 
-        let cardWidth = sliderContainerWidth/elementsToShow;
-
-        slider.style.width = cards.length*cardWidth+'px';
+        // slider.style.width = cards.length*cardWidth+'px';
 
         for(let i = 0; i<cards.length; i++){
             const element = cards[i];
         }
 
         function next(){
-            console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
-            if(+slider.style.marginLeft.slice(0, -2) != (-cardWidth*(cards.length-elementsToShow))){
-                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))-cardWidth)+'px';
-            }
+            // console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
+            // if(+slider.style.marginLeft.slice(0, -2) != (-cardWidth*(cards.length-elementsToShow))){
+            //     slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))-cardWidth)+'px';
+            // }
+            const widthItem = document.querySelector('#ormas-card').offsetWidth;
+            document.getElementById('sliderContainer').scrollLeft += widthItem;
         }
 
         function prev(){
-            console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
-            if(+slider.style.marginLeft.slice(0, -2) != 0){
-                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))+cardWidth)+'px';
-            }
+            // console.log(+slider.style.marginLeft.slice(0,-2)-cardWidth);
+            // if(+slider.style.marginLeft.slice(0, -2) != 0){
+            //     slider.style.marginLeft = ((+slider.style.marginLeft.slice(0,-2))+cardWidth)+'px';
+            // }
+            const widthItem = document.querySelector('#ormas-card').offsetWidth;
+            document.getElementById('sliderContainer').scrollLeft -= widthItem;
         }
     </script>
 </body>
